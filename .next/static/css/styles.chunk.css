@@ -557,12 +557,6 @@ code {
   -ms-user-select: none;
   user-select: none; }
 
-.root {
-  width: '50%';
-  overflow: 'auto';
-  display: flex;
-  flex: 1; }
-
 .container {
   overflow-x: auto;
   margin-right: auto;

@@ -45,10 +45,10 @@ export function _deleteUser(data) {
 }
 
 export async function _getUserbyid(data) {
-    console.log('getUserData>' + data);
+   // console.log('getUserData>' + data);
     const res = await fetch('http://localhost:8080/users/'+ data);
     const responseJson = await res.json();
-    console.log("return" + JSON.stringify(responseJson))
+  // console.log("return" + JSON.stringify(responseJson))
     return responseJson
 }
 export async function _updateImageUser(file,id){

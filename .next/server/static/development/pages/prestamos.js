@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -155,10 +155,10 @@ function _deleteUser(data) {
   }).catch(err => err);
 }
 async function _getUserbyid(data) {
-  console.log('getUserData>' + data);
+  // console.log('getUserData>' + data);
   const res = await isomorphic_fetch__WEBPACK_IMPORTED_MODULE_1___default()('http://localhost:8080/users/' + data);
-  const responseJson = await res.json();
-  console.log("return" + _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(responseJson));
+  const responseJson = await res.json(); // console.log("return" + JSON.stringify(responseJson))
+
   return responseJson;
 }
 async function _updateImageUser(file, id) {
@@ -2435,17 +2435,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_Table_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Table.scss */ "./components/Table.scss");
-/* harmony import */ var _components_Table_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_Table_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _actions_userAction__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../actions/userAction */ "./actions/userAction.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_Table_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Table.scss */ "./components/Table.scss");
+/* harmony import */ var _components_Table_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_Table_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _actions_userAction__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../actions/userAction */ "./actions/userAction.js");
+/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Card */ "@material-ui/core/Card");
+/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/CardActionArea */ "@material-ui/core/CardActionArea");
+/* harmony import */ var _material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/CardActions */ "@material-ui/core/CardActions");
+/* harmony import */ var _material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/CardContent */ "@material-ui/core/CardContent");
+/* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/CardMedia */ "@material-ui/core/CardMedia");
+/* harmony import */ var _material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core/Avatar */ "@material-ui/core/Avatar");
+/* harmony import */ var _material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/core/CardHeader */ "@material-ui/core/CardHeader");
+/* harmony import */ var _material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/core/IconButton */ "@material-ui/core/IconButton");
+/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "@material-ui/icons/MoreVert");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_17__);
 var _jsxFileName = "C:\\Users\\Riano\\Repo\\PagosApp\\pages\\prestamos.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
 
 
 
@@ -2454,29 +2476,27 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
-class pagos extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
+
+
+
+
+
+
+
+
+
+
+
+class pagos extends react__WEBPACK_IMPORTED_MODULE_3__["Component"] {
   constructor(props) {
     super(props);
     this.state = {
       queryval: this.props.queryval,
-      userdata: [],
-      noDocument: ''
+      userdata: this.props.userdataprops,
+      dataExist: this.props.dataexistprops,
+      noDocument: this.props.queryval
     };
     this._handleNoDocChange = this._handleNoDocChange.bind(this);
-  }
-
-  static getInitialProps({
-    query
-  }) {
-    console.log("valor" + query.user);
-
-    if (query.user == undefined) {
-      console.log("Render normal");
-    } else console.log("Render based on user " + query.user);
-
-    return {
-      queryval: query
-    };
   }
 
   _handleNoDocChange(event) {
@@ -2486,82 +2506,245 @@ class pagos extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
   }
 
   _handleLoadUser() {
-    return Object(_actions_userAction__WEBPACK_IMPORTED_MODULE_6__["_getUserbyid"])(this.state.noDocument).then(res => {
-      this.setState({
-        userdata: res[0]
-      });
-    }).catch(error => console.log(error)); // console.log('get user> ' + data)
+    if (this.state.noDocument != '') {
+      console.log("entre");
+      return Object(_actions_userAction__WEBPACK_IMPORTED_MODULE_7__["_getUserbyid"])(this.state.noDocument).then(res => {
+        if (res !== null) {
+          this.setState({
+            userdata: res[0],
+            dataExist: true
+          });
+
+          this._doclick();
+        }
+      }).catch(error => console.log(error));
+    } else {
+      console.log("else entre");
+      return this.setState({
+        userdata: [],
+        dataExist: false
+      }); // this._doclick()
+    }
+  } // console.log('get user> ' + data)
+
+
+  _rendercardPrestamos() {
+    //  console.log(this.state.userdata + '---------->')
+    if (this.state.dataExist) {
+      if (this.state.userdata !== undefined && this.state.userdata.prestamos !== null) return this.state.userdata.prestamos.map(prestamo => // console.log("valor prestamo" + prestamo.prestamo_valor),
+      __jsx("div", {
+        className: useStyles.card_div_cotainer,
+        key: prestamo.idprestamo,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }, __jsx(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_8___default.a, {
+        className: useStyles.card,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }, __jsx(_material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_15___default.a, {
+        avatar: __jsx(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_14___default.a, {
+          "aria-label": "recipe",
+          style: {
+            backgroundColor: "rgb(254, 107, 139)"
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 84
+          },
+          __self: this
+        }, "P", prestamo.idprestamo)
+        /*action={
+         <IconButton aria-label="settings">
+            <MoreVertIcon />
+          </IconButton>
+        }*/
+        ,
+        title: "Prestamo No: " + prestamo.idprestamo,
+        subheader: "Fecha: " + prestamo.fecha_prestamo,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }), __jsx(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 101
+        },
+        __self: this
+      }, __jsx(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_12___default.a, {
+        className: useStyles.media,
+        image: "../../components/image/",
+        title: "Contemplative Reptile",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 102
+        },
+        __self: this
+      }), __jsx(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 107
+        },
+        __self: this
+      }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default.a, {
+        gutterBottom: true,
+        variant: "h5",
+        component: "h2",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 108
+        },
+        __self: this
+      }, "Prestamo No ", prestamo.idprestamo), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_13___default.a, {
+        variant: "body2",
+        color: "textSecondary",
+        component: "p",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 111
+        },
+        __self: this
+      }, "Valor Prestamo : ", prestamo.prestamo_valor, " ", __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 112
+        },
+        __self: this
+      }), "No de Cuotas :", prestamo.prestamo_cuotas, " ", __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 113
+        },
+        __self: this
+      }), "Interes aplicado : ", prestamo.prestamo_tax))), __jsx(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 118
+        },
+        __self: this
+      }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
+        size: "small",
+        color: "primary",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 119
+        },
+        __self: this
+      }, "Ver detalles")))));
+    }
   }
 
   _renderbasedonQueryvalue() {
-    console.log('RENDERRRS');
-    console.log("fuck" + this.state.userdata.name);
-
-    if (this.state.queryval.user == undefined) {
+    //  console.log('RENDERRRS'+this.state.queryval)
+    //console.log("fuck"+ this.state.userdata.name)
+    //console.log("Data " +  this.state.userdata.prestamos)
+    if (this.state.queryval == undefined) {
       return __jsx("div", {
         className: "divPrestamos",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 135
         },
         __self: this
-      }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+      }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
         className: "containerDataUser",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 136
         },
         __self: this
-      }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
+      }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TextField"], {
         value: this.state.noDocument,
         onChange: this._handleNoDocChange,
         label: "Numero de Documento",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 138
         },
         __self: this
-      }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+      }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
         variant: "contained",
         color: "primary",
         onClick: this._handleLoadUser.bind(this),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 139
         },
         __self: this
       }, "Consultar ")), __jsx("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 141
         },
         __self: this
-      }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+      }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
         className: "containerDataUser",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 142
         },
         __self: this
-      }, __jsx("label", {
+      }, this._rendercardPrestamos()));
+    } //{}  <label>{this.state.userdata.name}</label>
+    else //console.log('RENDERRRS BASADO EN USUARIO OK')
+      return __jsx("div", {
+        className: "divPrestamos",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 155
         },
         __self: this
-      }, this.state.userdata.name)));
-    } else return __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 68
-      },
-      __self: this
-    }, "Render with value ", query);
+      }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+        className: "containerDataUser",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 156
+        },
+        __self: this
+      }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TextField"], {
+        value: this.state.noDocument,
+        onChange: this._handleNoDocChange,
+        label: "Numero de Documento",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 158
+        },
+        __self: this
+      }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
+        variant: "contained",
+        color: "primary",
+        onClick: this._handleLoadUser.bind(this),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 159
+        },
+        __self: this
+      }, "Consultar ")), __jsx("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 161
+        },
+        __self: this
+      }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+        className: "containerDataUser",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 162
+        },
+        __self: this
+      }, this._rendercardPrestamos()));
   }
 
   _doclick() {
-    const href = `/prestamos?user=15155`;
-    next_router__WEBPACK_IMPORTED_MODULE_3___default.a.push(href, href, {
+    const href = `/prestamos?user=` + this.state.noDocument;
+    next_router__WEBPACK_IMPORTED_MODULE_4___default.a.push(href, href, {
       shallow: true
     });
   }
@@ -2570,13 +2753,13 @@ class pagos extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
     return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_0__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 79
+        lineNumber: 179
       },
       __self: this
     }, __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81
+        lineNumber: 181
       },
       __self: this
     }), this._renderbasedonQueryvalue());
@@ -2584,11 +2767,58 @@ class pagos extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
 
 }
 
+pagos.getInitialProps = async ({
+  query
+}) => {
+  //console.log("valor"+query.user)
+  var queryval;
+  var userdataprops = [];
+  var dataexistprops = false;
+
+  if (query.user == undefined) {
+    // console.log("Render normal")
+    queryval = '', userdataprops = [], dataexistprops = false;
+  } else {
+    //console.log("Render based on user " + query.user)
+    const resp = await Object(_actions_userAction__WEBPACK_IMPORTED_MODULE_7__["_getUserbyid"])(query.user);
+    queryval = query.user;
+    userdataprops = resp[0];
+    dataexistprops = true; //console.log("!Jso" + JSON.stringify(resp))
+  }
+
+  return {
+    queryval: queryval,
+    userdataprops: userdataprops,
+    dataexistprops: dataexistprops
+  };
+};
+
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
+  card: {
+    maxWidth: 345
+  },
+  media: {
+    height: 140
+  },
+  card_div_cotainer: {
+    margin: "5px"
+  },
+  orange: {
+    color: theme.palette.getContrastText(deepOrange[500]),
+    backgroundColor: deepOrange[500]
+  },
+  root: {
+    display: 'flex',
+    '& > *': {
+      margin: theme.spacing(1)
+    }
+  }
+}));
 /* harmony default export */ __webpack_exports__["default"] = (pagos);
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!**********************************!*\
   !*** multi ./pages/prestamos.js ***!
   \**********************************/
@@ -2630,6 +2860,127 @@ module.exports = require("@fortawesome/react-fontawesome");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core");
+
+/***/ }),
+
+/***/ "@material-ui/core/Avatar":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/Avatar" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Avatar");
+
+/***/ }),
+
+/***/ "@material-ui/core/Card":
+/*!*****************************************!*\
+  !*** external "@material-ui/core/Card" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Card");
+
+/***/ }),
+
+/***/ "@material-ui/core/CardActionArea":
+/*!***************************************************!*\
+  !*** external "@material-ui/core/CardActionArea" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/CardActionArea");
+
+/***/ }),
+
+/***/ "@material-ui/core/CardActions":
+/*!************************************************!*\
+  !*** external "@material-ui/core/CardActions" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/CardActions");
+
+/***/ }),
+
+/***/ "@material-ui/core/CardContent":
+/*!************************************************!*\
+  !*** external "@material-ui/core/CardContent" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/CardContent");
+
+/***/ }),
+
+/***/ "@material-ui/core/CardHeader":
+/*!***********************************************!*\
+  !*** external "@material-ui/core/CardHeader" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/CardHeader");
+
+/***/ }),
+
+/***/ "@material-ui/core/CardMedia":
+/*!**********************************************!*\
+  !*** external "@material-ui/core/CardMedia" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/CardMedia");
+
+/***/ }),
+
+/***/ "@material-ui/core/IconButton":
+/*!***********************************************!*\
+  !*** external "@material-ui/core/IconButton" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/IconButton");
+
+/***/ }),
+
+/***/ "@material-ui/core/Typography":
+/*!***********************************************!*\
+  !*** external "@material-ui/core/Typography" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Typography");
+
+/***/ }),
+
+/***/ "@material-ui/core/styles":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/styles" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/styles");
+
+/***/ }),
+
+/***/ "@material-ui/icons/MoreVert":
+/*!**********************************************!*\
+  !*** external "@material-ui/icons/MoreVert" ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/MoreVert");
 
 /***/ }),
 

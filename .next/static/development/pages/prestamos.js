@@ -85,21 +85,19 @@ function _getUserbyid2() {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            console.log('getUserData>' + data);
-            _context.next = 3;
+            _context.next = 2;
             return isomorphic_fetch__WEBPACK_IMPORTED_MODULE_3___default()('http://localhost:8080/users/' + data);
 
-          case 3:
+          case 2:
             res = _context.sent;
-            _context.next = 6;
+            _context.next = 5;
             return res.json();
 
-          case 6:
+          case 5:
             responseJson = _context.sent;
-            console.log("return" + _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_2___default()(responseJson));
             return _context.abrupt("return", responseJson);
 
-          case 9:
+          case 7:
           case "end":
             return _context.stop();
         }
@@ -2181,6 +2179,52 @@ function _typeof(obj) {
 
   return _typeof(obj);
 }
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/extends.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/extends.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _extends() {
+  module.exports = _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+module.exports = _extends;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/interopRequireDefault.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
 
 /***/ }),
 
@@ -45579,6 +45623,75 @@ module.exports = hoistNonReactStatics;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/icons/MoreVert.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@material-ui/icons/MoreVert.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
+  d: "M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+}), 'MoreVert');
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/utils/createSvgIcon.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@material-ui/icons/utils/createSvgIcon.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = createSvgIcon;
+
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _SvgIcon = _interopRequireDefault(__webpack_require__(/*! @material-ui/core/SvgIcon */ "./node_modules/@material-ui/core/esm/SvgIcon/index.js"));
+
+function createSvgIcon(path, displayName) {
+  var Component = _react.default.memo(_react.default.forwardRef(function (props, ref) {
+    return _react.default.createElement(_SvgIcon.default, (0, _extends2.default)({
+      ref: ref
+    }, props), path);
+  }));
+
+  if (true) {
+    Component.displayName = "".concat(displayName, "Icon");
+  }
+
+  Component.muiName = _SvgIcon.default.muiName;
+  return Component;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/styles/esm/ServerStyleSheets/ServerStyleSheets.js":
 /*!*************************************************************************************!*\
   !*** ./node_modules/@material-ui/styles/esm/ServerStyleSheets/ServerStyleSheets.js ***!
@@ -77634,23 +77747,40 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _components_Table_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Table.scss */ "./components/Table.scss");
-/* harmony import */ var _components_Table_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_Table_scss__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _actions_userAction__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../actions/userAction */ "./actions/userAction.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _components_Table_scss__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Table.scss */ "./components/Table.scss");
+/* harmony import */ var _components_Table_scss__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_components_Table_scss__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _actions_userAction__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../actions/userAction */ "./actions/userAction.js");
+/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/core/Card */ "./node_modules/@material-ui/core/esm/Card/index.js");
+/* harmony import */ var _material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/core/CardActionArea */ "./node_modules/@material-ui/core/esm/CardActionArea/index.js");
+/* harmony import */ var _material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @material-ui/core/CardActions */ "./node_modules/@material-ui/core/esm/CardActions/index.js");
+/* harmony import */ var _material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @material-ui/core/CardContent */ "./node_modules/@material-ui/core/esm/CardContent/index.js");
+/* harmony import */ var _material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @material-ui/core/CardMedia */ "./node_modules/@material-ui/core/esm/CardMedia/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @material-ui/core/Avatar */ "./node_modules/@material-ui/core/esm/Avatar/index.js");
+/* harmony import */ var _material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @material-ui/core/CardHeader */ "./node_modules/@material-ui/core/esm/CardHeader/index.js");
+/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @material-ui/core/IconButton */ "./node_modules/@material-ui/core/esm/IconButton/index.js");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_25__);
+
+
 
 
 
@@ -77658,7 +77788,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "C:\\Users\\Riano\\Repo\\PagosApp\\pages\\prestamos.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77670,24 +77811,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
 var pagos =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(pagos, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(pagos, _Component);
 
   function pagos(props) {
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, pagos);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, pagos);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(pagos).call(this, props));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(pagos).call(this, props));
     _this.state = {
       queryval: _this.props.queryval,
-      userdata: [],
-      noDocument: ''
+      userdata: _this.props.userdataprops,
+      dataExist: _this.props.dataexistprops,
+      noDocument: _this.props.queryval
     };
-    _this._handleNoDocChange = _this._handleNoDocChange.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this));
+    _this._handleNoDocChange = _this._handleNoDocChange.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this));
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(pagos, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(pagos, [{
     key: "_handleNoDocChange",
     value: function _handleNoDocChange(event) {
       this.setState({
@@ -77699,125 +77841,356 @@ function (_Component) {
     value: function _handleLoadUser() {
       var _this2 = this;
 
-      return Object(_actions_userAction__WEBPACK_IMPORTED_MODULE_12__["_getUserbyid"])(this.state.noDocument).then(function (res) {
-        _this2.setState({
-          userdata: res[0]
+      if (this.state.noDocument != '') {
+        console.log("entre");
+        return Object(_actions_userAction__WEBPACK_IMPORTED_MODULE_15__["_getUserbyid"])(this.state.noDocument).then(function (res) {
+          if (res !== null) {
+            _this2.setState({
+              userdata: res[0],
+              dataExist: true
+            });
+
+            _this2._doclick();
+          }
+        })["catch"](function (error) {
+          return console.log(error);
         });
-      })["catch"](function (error) {
-        return console.log(error);
-      }); // console.log('get user> ' + data)
+      } else {
+        console.log("else entre");
+        return this.setState({
+          userdata: [],
+          dataExist: false
+        }); // this._doclick()
+      }
+    } // console.log('get user> ' + data)
+
+  }, {
+    key: "_rendercardPrestamos",
+    value: function _rendercardPrestamos() {
+      //  console.log(this.state.userdata + '---------->')
+      if (this.state.dataExist) {
+        if (this.state.userdata !== undefined && this.state.userdata.prestamos !== null) return this.state.userdata.prestamos.map(function (prestamo) {
+          return (// console.log("valor prestamo" + prestamo.prestamo_valor),
+            __jsx("div", {
+              className: useStyles.card_div_cotainer,
+              key: prestamo.idprestamo,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 78
+              },
+              __self: this
+            }, __jsx(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_16__["default"], {
+              className: useStyles.card,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 79
+              },
+              __self: this
+            }, __jsx(_material_ui_core_CardHeader__WEBPACK_IMPORTED_MODULE_23__["default"], {
+              avatar: __jsx(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_22__["default"], {
+                "aria-label": "recipe",
+                style: {
+                  backgroundColor: "rgb(254, 107, 139)"
+                },
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 84
+                },
+                __self: this
+              }, "P", prestamo.idprestamo)
+              /*action={
+               <IconButton aria-label="settings">
+                  <MoreVertIcon />
+                </IconButton>
+              }*/
+              ,
+              title: "Prestamo No: " + prestamo.idprestamo,
+              subheader: "Fecha: " + prestamo.fecha_prestamo,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 81
+              },
+              __self: this
+            }), __jsx(_material_ui_core_CardActionArea__WEBPACK_IMPORTED_MODULE_17__["default"], {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 101
+              },
+              __self: this
+            }, __jsx(_material_ui_core_CardMedia__WEBPACK_IMPORTED_MODULE_20__["default"], {
+              className: useStyles.media,
+              image: "../../components/image/",
+              title: "Contemplative Reptile",
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 102
+              },
+              __self: this
+            }), __jsx(_material_ui_core_CardContent__WEBPACK_IMPORTED_MODULE_19__["default"], {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 107
+              },
+              __self: this
+            }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_21__["default"], {
+              gutterBottom: true,
+              variant: "h5",
+              component: "h2",
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 108
+              },
+              __self: this
+            }, "Prestamo No ", prestamo.idprestamo), __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_21__["default"], {
+              variant: "body2",
+              color: "textSecondary",
+              component: "p",
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 111
+              },
+              __self: this
+            }, "Valor Prestamo : ", prestamo.prestamo_valor, " ", __jsx("br", {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 112
+              },
+              __self: this
+            }), "No de Cuotas :", prestamo.prestamo_cuotas, " ", __jsx("br", {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 113
+              },
+              __self: this
+            }), "Interes aplicado : ", prestamo.prestamo_tax))), __jsx(_material_ui_core_CardActions__WEBPACK_IMPORTED_MODULE_18__["default"], {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 118
+              },
+              __self: this
+            }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["Button"], {
+              size: "small",
+              color: "primary",
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 119
+              },
+              __self: this
+            }, "Ver detalles"))))
+          );
+        });
+      }
     }
   }, {
     key: "_renderbasedonQueryvalue",
     value: function _renderbasedonQueryvalue() {
-      console.log('RENDERRRS');
-      console.log("fuck" + this.state.userdata.name);
-
-      if (this.state.queryval.user == undefined) {
+      //  console.log('RENDERRRS'+this.state.queryval)
+      //console.log("fuck"+ this.state.userdata.name)
+      //console.log("Data " +  this.state.userdata.prestamos)
+      if (this.state.queryval == undefined) {
         return __jsx("div", {
           className: "divPrestamos",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 52
+            lineNumber: 135
           },
           __self: this
-        }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["Box"], {
+        }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["Box"], {
           className: "containerDataUser",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 53
+            lineNumber: 136
           },
           __self: this
-        }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["TextField"], {
+        }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["TextField"], {
           value: this.state.noDocument,
           onChange: this._handleNoDocChange,
           label: "Numero de Documento",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 55
+            lineNumber: 138
           },
           __self: this
-        }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["Button"], {
+        }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["Button"], {
           variant: "contained",
           color: "primary",
           onClick: this._handleLoadUser.bind(this),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 56
+            lineNumber: 139
           },
           __self: this
         }, "Consultar ")), __jsx("br", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 58
+            lineNumber: 141
           },
           __self: this
-        }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["Box"], {
+        }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["Box"], {
           className: "containerDataUser",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 59
+            lineNumber: 142
           },
           __self: this
-        }, __jsx("label", {
+        }, this._rendercardPrestamos()));
+      } //{}  <label>{this.state.userdata.name}</label>
+      else //console.log('RENDERRRS BASADO EN USUARIO OK')
+        return __jsx("div", {
+          className: "divPrestamos",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 60
+            lineNumber: 155
           },
           __self: this
-        }, this.state.userdata.name)));
-      } else return __jsx("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68
-        },
-        __self: this
-      }, "Render with value ", query);
+        }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["Box"], {
+          className: "containerDataUser",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 156
+          },
+          __self: this
+        }, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["TextField"], {
+          value: this.state.noDocument,
+          onChange: this._handleNoDocChange,
+          label: "Numero de Documento",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 158
+          },
+          __self: this
+        }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["Button"], {
+          variant: "contained",
+          color: "primary",
+          onClick: this._handleLoadUser.bind(this),
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 159
+          },
+          __self: this
+        }, "Consultar ")), __jsx("br", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 161
+          },
+          __self: this
+        }), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["Box"], {
+          className: "containerDataUser",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 162
+          },
+          __self: this
+        }, this._rendercardPrestamos()));
     }
   }, {
     key: "_doclick",
     value: function _doclick() {
-      var href = "/prestamos?user=15155";
-      next_router__WEBPACK_IMPORTED_MODULE_9___default.a.push(href, href, {
+      var href = "/prestamos?user=" + this.state.noDocument;
+      next_router__WEBPACK_IMPORTED_MODULE_12___default.a.push(href, href, {
         shallow: true
       });
     }
   }, {
     key: "render",
     value: function render() {
-      return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 179
         },
         __self: this
       }, __jsx("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 181
         },
         __self: this
       }), this._renderbasedonQueryvalue());
     }
-  }], [{
-    key: "getInitialProps",
-    value: function getInitialProps(_ref) {
-      var query = _ref.query;
-      console.log("valor" + query.user);
-
-      if (query.user == undefined) {
-        console.log("Render normal");
-      } else console.log("Render based on user " + query.user);
-
-      return {
-        queryval: query
-      };
-    }
   }]);
 
   return pagos;
-}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_11__["Component"]);
 
+pagos.getInitialProps =
+/*#__PURE__*/
+function () {
+  var _ref2 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  /*#__PURE__*/
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref) {
+    var query, queryval, userdataprops, dataexistprops, resp;
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            query = _ref.query;
+            userdataprops = [];
+            dataexistprops = false;
+
+            if (!(query.user == undefined)) {
+              _context.next = 7;
+              break;
+            }
+
+            // console.log("Render normal")
+            queryval = '', userdataprops = [], dataexistprops = false;
+            _context.next = 13;
+            break;
+
+          case 7:
+            _context.next = 9;
+            return Object(_actions_userAction__WEBPACK_IMPORTED_MODULE_15__["_getUserbyid"])(query.user);
+
+          case 9:
+            resp = _context.sent;
+            queryval = query.user;
+            userdataprops = resp[0];
+            dataexistprops = true; //console.log("!Jso" + JSON.stringify(resp))
+
+          case 13:
+            return _context.abrupt("return", {
+              queryval: queryval,
+              userdataprops: userdataprops,
+              dataexistprops: dataexistprops
+            });
+
+          case 14:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+
+  return function (_x) {
+    return _ref2.apply(this, arguments);
+  };
+}();
+
+var useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_10__["makeStyles"])(function (theme) {
+  return {
+    card: {
+      maxWidth: 345
+    },
+    media: {
+      height: 140
+    },
+    card_div_cotainer: {
+      margin: "5px"
+    },
+    orange: {
+      color: theme.palette.getContrastText(deepOrange[500]),
+      backgroundColor: deepOrange[500]
+    },
+    root: {
+      display: 'flex',
+      '& > *': {
+        margin: theme.spacing(1)
+      }
+    }
+  };
+});
 /* harmony default export */ __webpack_exports__["default"] = (pagos);
 
 /***/ }),
