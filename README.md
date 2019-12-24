@@ -4,3 +4,4 @@ This is a React Js application developed using NextJs Framework with a back-end 
 
 
 ![alt text](https://eco2.com.co/wp-content/uploads/2019/12/pagos1.png)
+![alt text](https://eco2.com.co/wp-content/uploads/2019/12/pagos2.png)
