@@ -7,7 +7,7 @@ import { faMoneyCheck } from '@fortawesome/free-solid-svg-icons'
 import Link from "next/link";
 
 const style = {
-  background: 'linear-gradient(45deg, #66bb6a 30%, #a5d6a7 90%)',
+  background: 'linear-gradient(45deg, #409946 30%, #a5d6a7 90%)',
   borderRadius: 3,
   border: 0,
   color: 'white',

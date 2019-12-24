@@ -14,7 +14,7 @@ import { faBackward, faUserEdit, faSave } from '@fortawesome/free-solid-svg-icon
 
 
 const stylebutton = {
-  background: 'linear-gradient(45deg, rgb(254, 107, 139) 30%, rgb(255, 142, 83) 90%)',
+  background: 'linear-gradient(45deg, #409946 30%, #66BB6A 90%)',
   borderRadius: 3,
   border: 0,
   color: 'white',
@@ -27,7 +27,7 @@ const stylebutton = {
  // marginRight: 20
 };
 const stylebackbutton = {
- background: 'linear-gradient(45deg, #00e676 30%, #66ffa6 90%)',
+ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
   borderRadius: 3,
   border: 0,
   color: 'white',

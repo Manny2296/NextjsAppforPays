@@ -17,7 +17,10 @@ import CardHeader from '@material-ui/core/CardHeader';
 import IconButton from '@material-ui/core/IconButton';
 
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-
+const stylebackbutton = {
+  background: 'linear-gradient(45deg, #409946 30%, #66BB6A 90%)',
+  color:'white'
+}
 class pagos extends Component {
  
   constructor(props){
@@ -81,7 +84,7 @@ class pagos extends Component {
       <CardHeader
         avatar={
           
-          <Avatar  aria-label="recipe" style={{backgroundColor:"rgb(254, 107, 139)"}} >
+          <Avatar  aria-label="recipe" style={{backgroundColor:"#409946"}} >
             P{prestamo.idprestamo}
           </Avatar>
       
@@ -136,7 +139,7 @@ class pagos extends Component {
        <Box className='containerDataUser' >
           
          <TextField value={this.state.noDocument} onChange={this._handleNoDocChange} label="Numero de Documento" />
-         <Button variant="contained" color="primary" onClick={this._handleLoadUser.bind(this)} >Consultar </Button>
+         <Button  variant="contained" style={stylebackbutton}  onClick={this._handleLoadUser.bind(this)} >Consultar </Button>
        </Box>
        <br/>
            <Box className='containerDataUser'>
@@ -156,7 +159,7 @@ class pagos extends Component {
       <Box className='containerDataUser' >
          
         <TextField value={this.state.noDocument} onChange={this._handleNoDocChange} label="Numero de Documento" />
-        <Button variant="contained" color="primary" onClick={this._handleLoadUser.bind(this)} >Consultar </Button>
+        <Button variant="contained" style={stylebackbutton}  onClick={this._handleLoadUser.bind(this)} >Consultar </Button>
       </Box>
       <br/>
           <Box className='containerDataUser'>
@@ -193,7 +196,7 @@ class pagos extends Component {
   var dataexistprops = false
   if(query.user ==undefined){
    // console.log("Render normal")
-    queryval = '',
+    queryval = undefined,
     userdataprops = [],
     dataexistprops = false    
   }

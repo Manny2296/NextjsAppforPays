@@ -17,7 +17,7 @@
   
   /* Color/shape of burger icon bars on hover*/
   .bm-burger-bars-hover {
-    background: linear-gradient(45deg, rgb(254, 107, 139) 30%, rgb(255, 142, 83) 90%);
+    background: linear-gradient(45deg, #409946 30%, #66BB6A 90%);
   }
   
   /* Position and sizing of clickable cross button */
@@ -42,7 +42,7 @@
   
   /* General sidebar styles */
   .bm-menu {
-    background: linear-gradient(45deg, rgb(254, 107, 139) 30%, rgb(255, 142, 83) 90%);
+    background: linear-gradient(45deg, #409946 30%, #66BB6A 90%);
     padding: 4.5em 0.5em 0;
     font-size: 1.15em;
   }
@@ -87,7 +87,7 @@
   color: $on-secondary;
   text-transform: uppercase;
 
-  background: linear-gradient(45deg, rgb(254, 107, 139) 30%, rgb(255, 142, 83) 90%);
+  background: linear-gradient(45deg, #409946 30%, #66BB6A 90%);
 
   cursor: pointer;
 }

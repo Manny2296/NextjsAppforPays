@@ -15,7 +15,7 @@
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%); }
+  background: linear-gradient(45deg, #409946 30%, #66BB6A 90%); }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
@@ -36,7 +36,7 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
+  background: linear-gradient(45deg, #409946 30%, #66BB6A 90%);
   padding: 4.5em 0.5em 0;
   font-size: 1.15em; }
 
@@ -71,7 +71,7 @@
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-  background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
+  background: linear-gradient(45deg, #409946 30%, #66BB6A 90%);
   cursor: pointer; }
 
 .NavBar {
@@ -147,6 +147,38 @@ code {
 #root {
   display: flex;
   flex-direction: column; }
+
+.containerIndex {
+  /* @media (min-width: 700px){
+      display: flex;
+      flex-direction: column;
+     
+    padding: 10px;
+    //color: #025c19;
+    
+    }*/
+  display: flex;
+  overflow-x: auto;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: large;
+  padding: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  width: '100%'; }
+
+.imgstyle {
+  box-shadow: 0 3px 5px 2px #f6f6f6;
+  margin-top: 20px;
+  margin-left: 30px; }
+
+.firstlbl {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
 .ReactTable {
   position: relative;
