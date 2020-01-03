@@ -137,18 +137,12 @@ class TableUsers extends Component {
                 var arraytoPut = [{idusuario:toPut[0],name:toPut[1],surname:toPut[2],id_Document:toPut[3],email:toPut[4],telephone:parseInt(toPut[6])}]
                //   console.log("toPut> " + JSON.stringify(toPut))
                   _updateUser(arraytoPut);              
-                  this.setState(() => {
-                  //  console.log("User to be update: " + oldData.tableData.id)
-
-                   // console.log("User to be update: " + JSON.stringify(this.state.users[oldData.tableData.id]))
-                    this.state.users[oldData.tableData.id] = newData;
-                // console.log("User already update: " + JSON.stringify(this.state.users[oldData.tableData.id]))
-                    //console.log("Do something to merge data" + JSON.stringify([...this.state.users, newData]) )
-                  return({
-                    users:[...this.state.users, newData]
-                  
-                  })                 
+                  this.setState(prevState => {
+                    const users = [...prevState.users];
+                    users[users.indexOf(oldData)] = newData;
+                    return { ...prevState, users };
                   });
+                         
                                                          
               }
             }, 600);

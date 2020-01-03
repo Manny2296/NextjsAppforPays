@@ -5,7 +5,9 @@ import  TableUsers  from "../components/TableUsers";
 import React, { Component } from 'react';
 import { _loadUsuarios } from "../actions/userAction";
 import "../components/Layout.scss";
-
+/* PARA COMPILAR LA APLICACION CORRECTAMENTE _ 
+   EJECUTAR NPM RUN DEV DESPUES DE HABER INGRESADO CORRECTAMENTE AL PATH DEL PROYECTO
+*/
 
 /*const style = {
   background: 'linear-gradient(45deg, #66bb6a 30%, #a5d6a7 90%)',

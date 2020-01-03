@@ -35,13 +35,13 @@ class pagos extends Component {
   }
   
   _handleNoDocChange(event){
-    
+ 
    this.setState({noDocument: event.target.value});
-
+  
   }
   _handleLoadUser(){
     if(this.state.noDocument != ''){
-      console.log("entre")
+      //console.log("entre")
       return _getUserbyid(this.state.noDocument).then(res => {
         if(res !== null){
           this.setState({userdata : res[0],
@@ -138,7 +138,7 @@ class pagos extends Component {
         <div className='divPrestamos'>  
        <Box className='containerDataUser' >
           
-         <TextField value={this.state.noDocument} onChange={this._handleNoDocChange} label="Numero de Documento" />
+         <TextField value={this.state.noDocument || ''} onChange={this._handleNoDocChange} label="Numero de Documento" />
          <Button  variant="contained" style={stylebackbutton}  onClick={this._handleLoadUser.bind(this)} >Consultar </Button>
        </Box>
        <br/>
@@ -158,7 +158,7 @@ class pagos extends Component {
       <div className='divPrestamos'>  
       <Box className='containerDataUser' >
          
-        <TextField value={this.state.noDocument} onChange={this._handleNoDocChange} label="Numero de Documento" />
+        <TextField value={this.state.noDocument || ''} onChange={this._handleNoDocChange} label="Numero de Documento" />
         <Button variant="contained" style={stylebackbutton}  onClick={this._handleLoadUser.bind(this)} >Consultar </Button>
       </Box>
       <br/>
@@ -181,7 +181,7 @@ class pagos extends Component {
     return (
       <Layout>
         
-      <br />
+  
      {this._renderbasedonQueryvalue()}
           
       
