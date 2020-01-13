@@ -1,7 +1,7 @@
 import "./Header.scss";
-import { slide as Menu } from 'react-burger-menu'
+import { scaleRotate as Menu } from 'react-burger-menu'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faCreditCard, faShoppingBag } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faCreditCard, faShoppingBag, faCubes } from '@fortawesome/free-solid-svg-icons'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { faMoneyCheck } from '@fortawesome/free-solid-svg-icons'
 import Link from "next/link";
@@ -27,13 +27,16 @@ class Header extends Component {
 
     return (
       <div className="Header">
-       <Menu customBurgerIcon={ <img src={require('./image/menu1.png')}/> } >
+        
+       
+       <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}  customBurgerIcon={ <img src={require('./image/menu1.png')}/> } >
+       <h2  className="bm-Headermenu"><FontAwesomeIcon icon={faCubes}/>  ECO²Pos</h2>
         <a id="home" className="menu-item" href="/"><FontAwesomeIcon icon={faHome}/>  Home</a>
         <a id="usuarios" className="menu-item" href="/usuarios"><FontAwesomeIcon icon={faUser}/>  Usuarios</a>
         <a id="prestamos" className="bm-item menu-item" href='/prestamos'><FontAwesomeIcon icon={faCreditCard}/> Prestamos</a>
         <a id="prestamos" className="bm-item menu-item" href='/productos'><FontAwesomeIcon icon={faShoppingBag}/> Productos</a>
       </Menu>
-      
+  
     
     </div>
     );

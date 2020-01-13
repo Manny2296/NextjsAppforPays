@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -233,34 +233,50 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_5__["Component"] {
         lineNumber: 29
       },
       __self: this
-    }, __jsx(react_burger_menu__WEBPACK_IMPORTED_MODULE_1__["slide"], {
+    }, __jsx(react_burger_menu__WEBPACK_IMPORTED_MODULE_1__["scaleRotate"], {
+      pageWrapId: "page-wrap",
+      outerContainerId: "outer-container",
       customBurgerIcon: __jsx("img", {
         src: __webpack_require__(/*! ./image/menu1.png */ "./components/image/menu1.png"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 32
         },
         __self: this
       }),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 32
       },
       __self: this
-    }, __jsx("a", {
+    }, __jsx("h2", {
+      className: "bm-Headermenu",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faCubes"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }), "  ECO\xB2Pos"), __jsx("a", {
       id: "home",
       className: "menu-item",
       href: "/",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 34
       },
       __self: this
     }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faHome"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 34
       },
       __self: this
     }), "  Home"), __jsx("a", {
@@ -269,14 +285,14 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_5__["Component"] {
       href: "/usuarios",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 35
       },
       __self: this
     }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faUser"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 35
       },
       __self: this
     }), "  Usuarios"), __jsx("a", {
@@ -285,14 +301,14 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_5__["Component"] {
       href: "/prestamos",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 36
       },
       __self: this
     }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faCreditCard"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 36
       },
       __self: this
     }), " Prestamos"), __jsx("a", {
@@ -301,14 +317,14 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_5__["Component"] {
       href: "/productos",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 37
       },
       __self: this
     }, __jsx(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"], {
       icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faShoppingBag"],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 37
       },
       __self: this
     }), " Productos")));
@@ -407,16 +423,24 @@ const Layout = props => {
     },
     __self: undefined
   }), __jsx("div", {
+    id: "outer-container",
     className: "Content",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24
     },
     __self: undefined
-  }, props.children), __jsx(_NavBarSimple__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx("main", {
+    id: "page-wrap",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
+    },
+    __self: undefined
+  }, props.children)), __jsx(_NavBarSimple__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
     },
     __self: undefined
   }));
@@ -733,6 +757,10 @@ const columns = [{
   title: 'Descripcion',
   field: 'description'
 }, {
+  title: 'Codigo del Producto',
+  field: 'cod_product',
+  type: 'numeric'
+}, {
   title: 'Cantidad',
   field: 'quantity',
   type: 'numeric'
@@ -750,7 +778,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 54
     },
     __self: undefined
   }))),
@@ -758,7 +786,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 55
     },
     __self: undefined
   }))),
@@ -766,7 +794,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 56
     },
     __self: undefined
   }))),
@@ -774,7 +802,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 57
     },
     __self: undefined
   }))),
@@ -782,7 +810,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 58
     },
     __self: undefined
   }))),
@@ -790,7 +818,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 59
     },
     __self: undefined
   }))),
@@ -798,7 +826,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 60
     },
     __self: undefined
   }))),
@@ -806,7 +834,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 61
     },
     __self: undefined
   }))),
@@ -814,7 +842,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 62
     },
     __self: undefined
   }))),
@@ -822,7 +850,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 63
     },
     __self: undefined
   }))),
@@ -830,7 +858,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 64
     },
     __self: undefined
   }))),
@@ -838,7 +866,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 65
     },
     __self: undefined
   }))),
@@ -846,7 +874,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 66
     },
     __self: undefined
   }))),
@@ -854,7 +882,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 67
     },
     __self: undefined
   }))),
@@ -862,7 +890,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 68
     },
     __self: undefined
   }))),
@@ -870,7 +898,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 69
     },
     __self: undefined
   }))),
@@ -878,7 +906,7 @@ const tableIcons = {
     ref: ref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 70
     },
     __self: undefined
   })))
@@ -911,7 +939,7 @@ class TableUsers extends react__WEBPACK_IMPORTED_MODULE_12__["Component"] {
       className: "container",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 102
+        lineNumber: 107
       },
       __self: this
     }, __jsx(material_table__WEBPACK_IMPORTED_MODULE_13___default.a, {
@@ -923,7 +951,7 @@ class TableUsers extends react__WEBPACK_IMPORTED_MODULE_12__["Component"] {
         icon: _material_ui_icons_LocalMall__WEBPACK_IMPORTED_MODULE_33___default.a,
         tooltip: 'Detalles producto',
         onClick: (event, rowData) => //alert("You saved " + rowData.name)window.location.href
-        window.location.href = `/user/${rowData.id_Document}`
+        window.location.href = `/producto/${rowData.id}`
       }],
       editable: {
         onRowAdd: newData => new _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_10___default.a(resolve => {
@@ -949,9 +977,10 @@ class TableUsers extends react__WEBPACK_IMPORTED_MODULE_12__["Component"] {
                 id: toPut[0],
                 name: toPut[1],
                 description: toPut[2],
-                quantity: _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_8___default()(toPut[3]),
-                price_unity: _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_8___default()(toPut[4]),
-                total_price: _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_8___default()(toPut[5])
+                cod_product: _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_8___default()(toPut[3]),
+                quantity: _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_8___default()(toPut[4]),
+                price_unity: _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_8___default()(toPut[5]),
+                total_price: _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_8___default()(toPut[6])
               }]; //   console.log("toPut> " + JSON.stringify(toPut))
 
               Object(_actions_productAction__WEBPACK_IMPORTED_MODULE_29__["_updateProduct"])(arraytoPut);
@@ -983,7 +1012,7 @@ class TableUsers extends react__WEBPACK_IMPORTED_MODULE_12__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 103
+        lineNumber: 108
       },
       __self: this
     }));
@@ -2992,7 +3021,7 @@ class productos extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!**********************************!*\
   !*** multi ./pages/productos.js ***!
   \**********************************/

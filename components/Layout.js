@@ -21,8 +21,14 @@ const Layout = props => {
       </Head>
 
       <Header appTitle={appTitle} />
-      <div className="Content">{props.children}</div>
-      <NavBarSimple/>
+      <div id="outer-container" className="Content">
+        <main id="page-wrap">
+
+        
+        {props.children}
+        </main>
+        </div>
+      <NavBarSimple/>  
     </div>
   );
 };

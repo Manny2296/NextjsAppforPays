@@ -37,7 +37,7 @@
 /* General sidebar styles */
 .bm-menu {
   background: linear-gradient(45deg, #409946 30%, #66BB6A 90%);
-  padding: 4.5em 0.5em 0;
+  padding: 0.5em 0.5em 0;
   font-size: 1.15em; }
 
 /* Morph shape necessary with bubble or elastic */
@@ -49,11 +49,22 @@
   color: #b8b7ad;
   padding: 0.8em; }
 
+.bm-item:focus {
+  outline: none; }
+
 /* Individual item */
 .bm-item {
   display: inline-block;
   color: white;
-  margin: 2px;
+  padding-top: inherit;
+  text-decoration: none; }
+
+.bm-Headermenu:focus {
+  outline: none; }
+
+.bm-Headermenu {
+  display: inline-block;
+  color: white;
   padding-top: inherit;
   text-decoration: none; }
 

@@ -29,6 +29,11 @@ const columns =  [
   { title: 'Producto', field: 'name' },
   { title: 'Descripcion', field: 'description' },
   {
+    title: 'Codigo del Producto',
+    field:'cod_product',
+    type: 'numeric',
+  },
+  {
     title: 'Cantidad',
     field:'quantity',
     type: 'numeric',
@@ -112,7 +117,7 @@ class TableUsers extends Component {
           icon: LocalMallIcon,
           tooltip: 'Detalles producto',
           onClick: (event, rowData) => //alert("You saved " + rowData.name)window.location.href
-          window.location.href = `/user/${rowData.id_Document}`
+          window.location.href = `/producto/${rowData.id}`
            
         }
        ]}
@@ -138,7 +143,7 @@ class TableUsers extends Component {
               if (oldData) {                            
                 let toPut = Object.values(newData);
                 let tmp 
-                var arraytoPut = [{id:toPut[0],name:toPut[1],description:toPut[2],quantity:parseInt(toPut[3]),price_unity:parseInt(toPut[4]),total_price:parseInt(toPut[5])}]
+                var arraytoPut = [{id:toPut[0],name:toPut[1],description:toPut[2],cod_product:parseInt(toPut[3]),quantity:parseInt(toPut[4]),price_unity:parseInt(toPut[5]),total_price:parseInt(toPut[6])}]
                //   console.log("toPut> " + JSON.stringify(toPut))
                   _updateProduct(arraytoPut);
                
