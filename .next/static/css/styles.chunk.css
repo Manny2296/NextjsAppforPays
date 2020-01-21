@@ -123,20 +123,25 @@
   height: 100%;
   width: 100%; }
   .Layout .Content {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 100%;
     background: #2a3747;
     color: #fff;
-    font-family: "Merriweather Sans", sans-serif; }
-    .Layout .Content a {
-      color: inherit; }
+    font-family: "Merriweather Sans", sans-serif;
+    height: 100%; }
+    @media (min-width: 776px) {
+      .Layout .Content {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        background: #2a3747;
+        color: #fff;
+        font-family: "Merriweather Sans", sans-serif; }
+        .Layout .Content a {
+          color: inherit; } }
 
 * {
   box-sizing: border-box; }
@@ -604,7 +609,8 @@ code {
   overflow-x: auto;
   margin-right: auto;
   margin-left: auto;
-  padding: 10px; }
+  padding: 10px;
+  margin: 10px; }
 
 .containerDataUser {
   display: flex;

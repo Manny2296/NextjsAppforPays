@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import  TableUsers  from "../components/TableUsers";
 import React, { Component } from 'react';
 import { _loadUsuarios } from "../actions/userAction";
-import "../components/Layout.scss";
+
 /* PARA COMPILAR LA APLICACION CORRECTAMENTE _ 
    EJECUTAR NPM RUN DEV DESPUES DE HABER INGRESADO CORRECTAMENTE AL PATH DEL PROYECTO
 */
@@ -27,6 +27,8 @@ const stylemodify = {
   padding: '0 30px',
   boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
 };*/
+
+
 class usuarios extends Component {
   constructor(props) { 
     super(props)
@@ -38,26 +40,8 @@ class usuarios extends Component {
     return (
       <Layout>
         <TableUsers/>  
-        {
-
-          /* 
-           <Button variant="contained" style={style} href="/addUser"><FontAwesomeIcon icon={faUserPlus}/>   Agregar Usuario</Button>
-<Button variant="contained" style={stylemodify}>
-<FontAwesomeIcon icon={faUserEdit}/> Modificar Usuario
-</Button>
-<Button variant="contained" color="secondary" href="/updateUser">
-  Secondary
-</Button>
-
-<Button variant="contained" color="primary" href="#contained-buttons">
-  Link
-</Button>
-          
-   <UserForm onSubmit={this.handleSubmit} users={this.state.users} numRows={this.state.numRows} />   
-          
-          */ 
-        }   
-    </Layout>
+      </Layout>
+   
     );
   }
 }

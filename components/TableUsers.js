@@ -1,5 +1,7 @@
 import  { Component } from 'react';
 import MaterialTable from 'material-table';
+
+
 import { forwardRef } from 'react';
 import AddBox from '@material-ui/icons/AddBox';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
@@ -22,6 +24,9 @@ import { _deleteUser } from "../actions/userAction";
 import "./Table.scss"
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Paper from '@material-ui/core/Paper';
+
+
+
 
 const columns =  [
  {title:'Id', field:'idusuario', type:'numeric', hidden: true},
@@ -96,11 +101,12 @@ class TableUsers extends Component {
   
    
     return (
-      
-     <Paper className='container'>
+ 
+  <Paper className='container'>
     <MaterialTable
-       icons={tableIcons}
        
+       icons={tableIcons}
+      
        title="Lista de Usuarios"
        columns={columns}
        data={this.state.users}
@@ -163,6 +169,8 @@ class TableUsers extends Component {
       }}
     />
     </Paper>
+
+
     
     
     );
