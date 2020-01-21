@@ -71,7 +71,7 @@ const tableIcons = {
   
 };
 
-class TableUsers extends Component {
+class TableProduct extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -179,4 +179,4 @@ class TableUsers extends Component {
 }
 
 
-export default TableUsers;
+export default TableProduct;
