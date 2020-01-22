@@ -102,7 +102,7 @@ class TableUsers extends Component {
    
     return (
  
-  <Paper className='container'>
+   <Paper className='container'>
     <MaterialTable
        
        icons={tableIcons}

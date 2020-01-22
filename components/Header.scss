@@ -85,6 +85,7 @@
   }
 .Header {
  // display: flex;
+ @media (min-width: 776px){
   justify-content: flex-start;
   align-items: center;
 
@@ -102,4 +103,14 @@
   background: linear-gradient(45deg, #409946 30%, #66BB6A 90%);
 
   cursor: pointer;
+ }
+ //position: fixed;
+ height: 60px;
+ width: 100%;
+ font-family: $logo-font;
+ font-size: 24px;
+ font-weight: bold;
+ color: $on-secondary;
+ background: linear-gradient(45deg, #409946 30%, #66BB6A 90%);
+ 
 }

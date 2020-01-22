@@ -3,10 +3,13 @@
 
 
 .Layout {
-  flex: 1;
+  @media (min-width: 776px){
+    flex: 1;
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
+  }
   width: 100%;
 
   .Content {
@@ -14,7 +17,7 @@
  
       flex: 1;
       display: flex;
-     // flex-wrap: wrap;
+     flex-wrap: wrap;
       flex-direction: row;
       justify-content: center;
       align-items: center;
@@ -33,8 +36,16 @@
     }
     background: $secondary;
     color: $on-secondary;
-    font-family: $core-font;
+    font-family: $core-font; 
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+//    padding-top: 10%;
+
+   padding-left: 25%;
+   padding-right: 25%;
   
   }
 }

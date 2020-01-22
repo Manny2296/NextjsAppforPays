@@ -73,17 +73,26 @@
   background: rgba(0, 0, 0, 0.3); }
 
 .Header {
-  justify-content: flex-start;
-  align-items: center;
-  height: 50px;
+  height: 60px;
   width: 100%;
   font-family: "Share Tech Mono", monospace;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
-  text-transform: uppercase;
-  background: linear-gradient(45deg, #409946 30%, #66BB6A 90%);
-  cursor: pointer; }
+  background: linear-gradient(45deg, #409946 30%, #66BB6A 90%); }
+  @media (min-width: 776px) {
+    .Header {
+      justify-content: flex-start;
+      align-items: center;
+      height: 50px;
+      width: 100%;
+      font-family: "Share Tech Mono", monospace;
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      background: linear-gradient(45deg, #409946 30%, #66BB6A 90%);
+      cursor: pointer; } }
 
 .NavBar {
   display: flex;
@@ -117,20 +126,30 @@
     text-transform: capitalize; }
 
 .Layout {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   width: 100%; }
+  @media (min-width: 776px) {
+    .Layout {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%; } }
   .Layout .Content {
     background: #2a3747;
     color: #fff;
     font-family: "Merriweather Sans", sans-serif;
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25%;
+    padding-right: 25%; }
     @media (min-width: 776px) {
       .Layout .Content {
         flex: 1;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
         align-items: center;

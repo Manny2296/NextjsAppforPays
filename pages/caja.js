@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import { Button } from '@material-ui/core';
 
 const rootdiv = {
   width: '100%',
@@ -17,7 +18,8 @@ const rootdiv = {
   backgroundColor: "white",
   height: 450,
   overflow: 'auto',
-//  display:'flex'
+  //alignContent: 'center
+  //  display:'flex'
 
 }
 const colorlistitem={
@@ -41,9 +43,22 @@ const inline = {
 }
 const paper ={
     padding:2,
-    textAlign: 'center',
+    //textAlign: 'center',
     color: "white",
-  
+    
+}
+const paper_options = {
+  height: 350,
+  width: 360,
+  overflow: 'auto',
+  marginBottom: 20,
+ // maxWidth: 360,
+
+}
+const styletotalbutton = {
+  background: 'linear-gradient(45deg, #409946 30%, #66BB6A 90%)',
+  color:'white',
+  width:'40%' 
 }
 
 
@@ -154,12 +169,17 @@ class Caja extends Component {
     </List>
     <Grid item xs={12} sm={6} style={gridtotal}>
           <Paper style={paper}>
-ffgffff
+          <Button variant="contained" disabled style={styletotalbutton}>
+    Total
+   </Button>
           </Paper>
    </Grid>
    </Grid>
-   <Grid item  >
-      dddd
+   <Grid item xs={0}>
+   <Paper style={paper_options}>
+ 
+
+   </Paper>
    </Grid>
    </Grid>
       </Layout>
